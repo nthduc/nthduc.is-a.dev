@@ -1,0 +1,15 @@
+<header>
+	<div>
+		<img src="{{ .Github.User.AvatarURL }}" alt="nthduc">
+		<a title="nthduc" href="/">Nthduc</a>
+	</div>
+
+	<div>
+		{{ if .Weather }}
+			<a title="{{ .Weather.WeatherText }}, {{ .Weather.TemperatureF }}&deg;F&#013{{ .Weather.City }}, {{ .Weather.Country }}" id="weather" class="icon-btn"><img src="{{ .Weather.WeatherIcon }}"></a>
+		{{ end }}
+		<a title="Discord" id="discord" class="icon-btn" href="https://discordapp.com/users/681140407765172232" target="_blank"></a>
+		<a title="GitHub" id="github" class="icon-btn" href="https://github.com/nthduc" target="_blank"></a>
+		<a title="Email" id="email" class="icon-btn" href="mailto:nguyenthaiduc0212@gmail.com"></a>
+	</div>
+</header>

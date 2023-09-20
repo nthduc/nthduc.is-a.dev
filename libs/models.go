@@ -6,7 +6,7 @@ import (
 )
 
 type Data struct {
-	Github  *GithubData
+	Github  *GitHubData
 	Weather *WeatherData
 	Home    Home
 }

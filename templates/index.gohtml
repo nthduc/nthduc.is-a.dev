@@ -1,0 +1,25 @@
+{{ template "head.gohtml" . }}
+<body>
+{{ template "header.gohtml" . }}
+<main>
+
+	<div id="home" class="nav">
+		{{ template "home.gohtml" .}}
+	</div>
+
+	<div id="projects" class="nav">
+		<h2>My Top Repos:</h2>
+		{{ template "projects.gohtml" .}}
+	</div>
+
+	<br/>
+	
+	<div id="scoreboard" class="nav"></div>
+
+</main>
+<footer>
+	<p>© 2023 - <a href="https://github.com/nthduc" target="_blank">@nthduc.is-a.dev</a></p>
+</footer>
+<script src="/assets/script.js" defer></script>
+</body>
+</html>
