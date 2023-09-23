@@ -11,6 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+
 	"github.com/nthduc/nthduc.is-a.dev/libs"
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/exp/slog"
@@ -26,6 +27,7 @@ var (
 )
 
 func main() {
+
 	cfgPath := flag.String("config", "config.yml", "path to config file")
 	flag.Parse()
 
